@@ -1,0 +1,1 @@
+..\bin\moai.exe main.lua

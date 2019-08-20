@@ -1,0 +1,1 @@
+../bin/moai main.lua

@@ -1,0 +1,7 @@
+Name,Filename,Type,Width,Height,Relative to,Relation point,X,Y,Tiles in row,Tile rows,Description,Create prop
+bg,bg.png,graphic,1280,326,screen,center,-1920,-163,,,This is a black backgroud for all the osfs,1
+check,check.png,graphic,1280,326,screen,center,-1920,-163,,,Check OSF,1
+checkmate,checkmate.png,graphic,1280,326,screen,center,-1920,-163,,,Checkmate OSF,1
+defeat,defeat.png,graphic,1280,326,screen,center,-1920,-163,,,Defeat OSF,1
+victory,victory.png,graphic,1280,326,screen,center,-1920,-163,,,Victory OSF,1
+your_move,your_move.png,graphic,1280,326,screen,center,-1920,-163,,,Your Move OSF,1

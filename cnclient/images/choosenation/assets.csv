@@ -1,0 +1,7 @@
+Name,Filename,Type,Width,Height,Relative to,Relation point,X,Y,Tiles in row,Tile rows,Description,Click image,Create prop
+bg,nation_bg.png,graphic,1280,800,screen,bottom-left,0,0,,,Bg,,1
+england,england_window_color.png,button,328,564,screen,bottom-left,480,80,,,The english portrait,england_window_color.png,1
+rome,rome_window_color.png,button,328,564,screen,bottom-left,880,80,,,The roman portrait,rome_window_color.png,1
+india,india_window_color.png,button,328,564,screen,bottom-left,1280,80,,,The indian portrait,india_window_color.png,1
+right_arrow,right_normal.png,button,46,61,screen,bottom-left,1216,394,,,,right_pressed.png,1
+left_arrow,left_normal.png,button,46,61,screen,bottom-left,27,394,,,,left_pressed.png,1

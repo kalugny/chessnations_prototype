@@ -1,0 +1,14 @@
+Name,Filename,Type,Width,Height,Relative to,Relation point,X,Y,Tiles in row,Tile rows,Description,Create prop
+background,bg.png,graphic,1280,800,screen,top-left,0,-800,,,The backgroud image,1
+divider,divider.png,graphic,418,1,,bottom-left,0,0,,,The relation point is ignored,0
+empty_user,empty_user.png,graphic,87,84,,bottom-left,38,55,,,The relation point is ignored,0
+frame,frame.png,graphic,87,84,,bottom-left,38,55,,,The relation point is ignored,0
+selected,selected.png,graphic,444,110,,bottom-left,0,0,,,The relation point is ignored,0
+progress_frame,progress_frame.png,graphic,282,68,screen,top-left,500,-634,,,,1
+progress_fill,progress_fill.png,graphic,282,68,screen,top-left,500,-634,,,,1
+blank,blank.png,graphic,444,110,,bottom-left,0,0,,,The relation point is ignored,0
+scroll_hider,scroll_hider.png,graphic,1280,195,screen,top-left,0,-195,,,This hides the top of the scrolling lists,1
+profile_template,empty_user.png,graphic,74,75,,center,82,56,,,The relation point is ignored,0
+Rome,rome_window_color.png,graphic,328,564,screen,top-left,484,-712,,,The roman portrait,1
+England,england_window_color.png,graphic,328,564,screen,top-left,484,-712,,,The english portrait,1
+India,india_window_color.png,graphic,328,564,screen,top-left,484,-712,,,The indian portrait,1

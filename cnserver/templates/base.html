@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<title>{% block title %}Chess Nations{% endblock %}</title>
+
+		<!-- META TAGS -->
+		{% block meta %}
+        <meta http-equiv="content-type" content="{% block meta.content-type %}text/html;charset=UTF-8{% endblock meta.content-type %}" />
+        <meta name="description" content="{% block meta.description %}{% endblock meta.description %}" />
+        <meta name="keywords" content="{% block meta.keywords %}{% endblock meta.keywords %}" />
+        {% block meta.extra %}{% endblock meta.extra %}
+        {% endblock meta %}
+		        
+		{% block css %}
+		{% block css.extra %}{% endblock css.extra %}
+        {% endblock css %}        
+
+		{% block js %}
+		<!-- JS (jQuery) -->
+		<script src="{{ STATIC_URL}}js/jquery.min.js"></script>
+		{% endblock js %}
+		
+		{% block head.extra %}
+		{% endblock head.extra %}
+		
+	</head>
+	
+	{% block body %}
+	<body>
+		<div class="wrapper">
+			{% block header %}
+			<header>
+				{% block header.nav %}
+				<nav id="menu">
+					<ul id="navlist">
+
+					</ul>
+				</nav>
+				{% endblock header.nav %}
+				<div class="clearfloat"></div>
+			</header>
+			{% endblock header %}	
+			
+			{% block page_content %}
+			{% endblock page_content %}
+		</div>
+
+		{% block footer %}	
+		<footer>
+			<p>
+				Copyright &copy; Smite Entertainment. All rights reserved. 
+			</p>
+		</footer>
+		{% endblock footer %}
+		{% block js.extra %}{% endblock js.extra %}
+	</body>
+	{% endblock body %}	
+</html>

@@ -1,0 +1,4 @@
+Name,Filename,Type,Width,Height,Relative to,Relation point,X,Y,Tiles in row,Tile rows,Description,Click image,Create prop
+bg,box.png,graphic,700,500,screen,center,-350,-250,,,BG,,1
+tl_btn,timeline_btn.png,button,275,83,bg,top-left,134,-434,,,Timeline,timeline_btn_pressed.png,1
+ok_btn,ok_btn.png,button,131,83,bg,top-left,431,-434,,,OK,ok_btn_pressed.png,1

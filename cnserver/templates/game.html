@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block page_content %}
+<h1>WHITE: {{game.white_player}} &nbsp;&nbsp; BLACK: {{game.black_player}}</h1>
+<p><a href="{% url 'my_games' %}"><- Back to game selection</a></p>
+<p>STATUS: <span id="message"></span></p>
+<div id="board-goes-here"></div>
+<h2>Awards:</h2>
+<ul id="award-list"></ul>
+{% endblock page_content %}
+
+{% block css.extra %}
+<link rel="stylesheet" href="{{ STATIC_URL }}css/p4wn.css" />
+{% endblock css.extra %}
+
+{% block js.extra %}
+<script src="{{ STATIC_URL }}js/engine.js"></script>
+<script src="{{ STATIC_URL }}js/display.js"></script>
+<script>
+var game = p4wnify("board-goes-here", {{game.id}});
+game.next_move();
+setInterval(function() { game.refresh(); }, 10000);
+</script>
+{% endblock js.extra %}

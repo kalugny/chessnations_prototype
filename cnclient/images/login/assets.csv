@@ -1,0 +1,4 @@
+Name,Filename,Type,Width,Height,Relative to,Relation point,X,Y,Tiles in row,Tile rows,Description,Click image,Create prop
+backgroud,login_bg.png,graphic,1280,800,screen,bottom-left,0,0,,,"The backgroud image, contains the text ""Log in""",,1
+fb_button,facebook_btn.png,button,354,84,screen,bottom-left,465,427,,,FB login button,facebook_btn_pressed.png,1
+guest_button,guest_btn.png,button,354,85,screen,bottom-left,465,332,,,Guest login button,guest_btn_pressed.png,1

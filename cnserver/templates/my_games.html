@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block page_content %}
+{% if user %}
+<img src="{{ user.get_profile.get_image_url }}"/><h1>{{ user.get_profile.facebookname }}</h1>
+<h3>Progress points: {{user.get_profile.progress_points}}</h3>
+<h3>Level: {{user.get_profile.level.number}}, next level in {{user.get_profile.level.next_level_points}} points</h3>
+<h3>Age: {{user.get_profile.age.number}}, next age in {{user.get_profile.age.next_age_points}} points.</h3>
+{% endif %}
+
+<h2><a href="{% url 'new_game' %}">Start new game</a></h2>
+
+<h1>Games that are waiting for my move:</h1>
+<ol>
+{% for game in games_my_move %}
+	<li><a href="{% url 'game_interactive' game.id %}">{{game.white_player}} vs. {{game.black_player}}, started {{game.created_on|timesince}} ago</a></li>
+{% endfor %}
+</ol>
+<h1>Games that I'm waiting for the other player's move:</h1>
+<ol>
+{% for game in games_not_my_move %}
+	<li><a href="{% url 'game_interactive' game.id %}">{{game.white_player}} vs. {{game.black_player}}, started {{game.created_on|timesince}} ago</a></li>
+{% endfor %}
+</ol>
+<h1>Completed games:</h1>
+<ol>
+{% for game in ended_games %}
+	<li><a href="{% url 'game_interactive' game.id %}">{{game.white_player}} vs. {{game.black_player}}:</a>
+	{% if game.outcome == "checkmate" %}
+		Checkmate for {{game.next_player}}
+	{% else %}
+		{{game.get_outcome_display}}
+	{% endif %}
+	</li>
+{% endfor %}
+</ol>
+{% endblock page_content %}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="12" tilewidth="64" tileheight="64">
+ <tileset firstgid="1" name="plain" tilewidth="64" tileheight="64">
+  <image source="../tiles/plain.png" width="256" height="64"/>
+ </tileset>
+ <tileset firstgid="5" name="age1" tilewidth="64" tileheight="64">
+  <image source="../../../cnclient/images/sets/age1.png" width="768" height="64"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="20" height="12">
+  <data encoding="base64" compression="zlib">
+   eJy1k0EOABAMBLvl/2/GQSKbRSV1mBvTdpWbmRPo1ADY3FUuBLg5QbUHRQBxlnvjGaeLa/vi3M2u8nr1RTK6+RTZ/f3KL+t9f+xf5v+I7PbJxc4GDMwCKg==
+  </data>
+ </layer>
+ <layer name="board" width="20" height="12">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFyIARiJnQaEoAullMFJo30tw3CvADAE7oACY=
+  </data>
+ </layer>
+ <objectgroup name="pieces" width="20" height="12">
+  <object gid="5" x="640" y="448"/>
+  <object gid="6" x="704" y="512"/>
+  <object name="Rook" gid="7" x="640" y="256"/>
+  <object gid="7" x="512" y="384"/>
+  <object gid="9" x="512" y="512"/>
+  <object gid="10" x="768" y="256"/>
+ </objectgroup>
+</map>

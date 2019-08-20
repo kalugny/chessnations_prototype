@@ -1,0 +1,10 @@
+syntax: glob
+*.pyc
+cnserver/static/*
+cnserver/db
+cnclient/host/build
+kalugny.pem
+cnclient/lua/cookiejar
+cnserver/media/*
+kalugny.ppk
+chrome/*
